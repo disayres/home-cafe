@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "IRANSansX";
+  font-weight: 400;
+  src: url("./assets/fonts/iran-sans/IRANSansX-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bonyad";
+  font-weight: 400;
+  src: url("./assets/fonts/bonyad/BonyadeKoodakFaNum-Regular.woff2")
+    format("woff2");
+  font-display: swap;
+}
+
+@theme {
+  /* colors */
+  /* Brand Colors */
+  --color-primary: #02314b;
+  --color-primary-hover: #034563;
+
+  --color-secondary: #bc8767;
+  --color-secondary-hover: #a76f51;
+
+  /* Backgrounds */
+  --color-background: #f7f3ed;
+  --color-surface: #ffffff;
+
+  /* Text */
+  --color-text: #173849;
+  --color-text-muted: #786b63;
+
+  /* Accents */
+  --color-accent: #d9a66f;
+  --color-border: #e7ddd5;
+
+  /* Coffee Colors */
+  --color-coffee: #3b241a;
+  --color-coffee-light: #efe2d5;
+
+  /* fonts */
+  --font-sans: "IRANSansX", sans-serif;
+  --font-bonyad: "Bonyad";
+}

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home-cafe</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="bg-background">
+    <div id="app">
+      <!-- header section -->
+      <header id="header" class="text-white mt-4">
+        <!-- desktop header -->
+        <div
+          class="w-330 max-w-full h-17 mx-auto py-3 px-5 bg-primary rounded-xl"
+        >
+          <div class="container flex justify-between items-center mx-auto">
+            <!-- desktop header right (logo and menu) -->
+            <div class="flex gap-6 items-center">
+              <div class="max-w-32">
+                <img
+                  class="w-full"
+                  src="src/assets/images/logo.png"
+                  alt="home cafe logo"
+                />
+              </div>
+              <ul
+                class="flex gap-4 *:flex *:gap-1 *:items-center *:py-3 *:px-4 *:cursor-pointer "
+              >
+                <li>
+                  <svg
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.8337 6.91669H9.16699C7.65449 6.91669 6.41699 8.15419 6.41699 9.66669V13.3334C6.41699 14.8459 7.65449 16.0834 9.16699 16.0834H12.8337C14.3462 16.0834 15.5837 14.8459 15.5837 13.3334V9.66669"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M11 6.91669V16.0834"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6.41699 11.5H15.5837"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M1.83301 12.3983V14.25C1.83301 18.8333 3.66634 20.6666 8.24967 20.6666H13.7497C18.333 20.6666 20.1663 18.8333 20.1663 14.25V8.74998C20.1663 4.16665 18.333 2.33331 13.7497 2.33331H8.24967C3.66634 2.33331 1.83301 4.16665 1.83301 8.74998"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+
+                  <a href="#"> دسته‌بندی محصولات</a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="3"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.3729 4.12999C14.8129 4.78083 15.0696 5.56 15.0696 6.40333C15.0604 8.60333 13.3279 10.3908 11.1463 10.4642C11.0546 10.455 10.9446 10.455 10.8438 10.4642C8.81795 10.4 7.17711 8.85083 6.95711 6.87083C6.69128 4.51499 8.62545 2.33333 10.9904 2.33333"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6.40789 13.8467C4.18956 15.3317 4.18956 17.7517 6.40789 19.2275C8.92872 20.9142 13.0629 20.9142 15.5837 19.2275C17.8021 17.7425 17.8021 15.3225 15.5837 13.8467C13.0812 12.1692 8.94706 12.1692 6.40789 13.8467Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+
+                  <a href="#">درباره ما</a>
+                </li>
+                <li>
+                  <svg
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.60717 6.00916C8.77217 6.23833 8.89134 6.44916 8.97384 6.65083C9.05634 6.84333 9.10217 7.03583 9.10217 7.21C9.10217 7.43 9.03801 7.64999 8.90967 7.86083C8.79051 8.07166 8.61634 8.29166 8.39634 8.51166L7.69967 9.23583C7.59884 9.33666 7.55301 9.45583 7.55301 9.6025C7.55301 9.67583 7.56217 9.73999 7.58051 9.81333C7.60801 9.88666 7.63551 9.94166 7.65384 9.99666C7.81884 10.2992 8.10301 10.6933 8.50634 11.17C8.91884 11.6467 9.35884 12.1325 9.83551 12.6183C10.3305 13.1042 10.8072 13.5533 11.293 13.9658C11.7697 14.3692 12.1638 14.6442 12.4755 14.8092C12.5213 14.8275 12.5763 14.855 12.6405 14.8825C12.7138 14.91 12.7872 14.9192 12.8697 14.9192C13.0255 14.9192 13.1447 14.8642 13.2455 14.7633L13.9422 14.0758C14.1713 13.8467 14.3913 13.6725 14.6022 13.5625C14.813 13.4342 15.0238 13.37 15.253 13.37C15.4272 13.37 15.6105 13.4067 15.8122 13.4892C16.0138 13.5717 16.2247 13.6908 16.4538 13.8467L19.488 16.0008C19.7263 16.1658 19.8913 16.3583 19.9922 16.5875C20.0838 16.8167 20.1388 17.0458 20.1388 17.3025C20.1388 17.6325 20.0655 17.9717 19.9097 18.3017C19.7538 18.6317 19.5522 18.9433 19.2863 19.2367C18.8372 19.7317 18.3422 20.0892 17.783 20.3183C17.233 20.5475 16.6372 20.6667 15.9955 20.6667C15.0605 20.6667 14.0613 20.4467 13.0072 19.9975C11.953 19.5483 10.8988 18.9433 9.85384 18.1825C8.79967 17.4125 7.80051 16.56 6.84717 15.6158C5.90301 14.6625 5.05051 13.6633 4.28967 12.6183C3.53801 11.5733 2.93301 10.5283 2.49301 9.4925C2.05301 8.4475 1.83301 7.44833 1.83301 6.49499C1.83301 5.87166 1.94301 5.27583 2.16301 4.72583C2.38301 4.16666 2.73134 3.65333 3.21717 3.19499C3.80384 2.61749 4.44551 2.33333 5.12384 2.33333C5.38051 2.33333 5.63717 2.38833 5.86634 2.49833C6.10467 2.60833 6.31551 2.77333 6.48051 3.01166"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M16.9583 8.75C16.9583 8.2 16.5275 7.35667 15.8858 6.66917C15.2992 6.03667 14.52 5.54167 13.75 5.54167"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M15.5925 2.59916C15.0058 2.42499 14.3917 2.33333 13.75 2.33333"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M20.1662 8.75C20.1662 6.5775 19.0846 4.6525 17.4346 3.4975"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <a href="#">تماس با ما </a>
+                </li>
+                <li>
+                  <svg
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.33301 2.33333V5.08333"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M14.667 2.33333V5.08333"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6.41699 10.5833H13.7503"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M6.41699 14.25H11.0003"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M2.75 9.34583C2.75 5.03749 4.28083 3.88249 7.33333 3.70833H14.6667C17.7192 3.87333 19.25 5.03749 19.25 9.34583V15.1667"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M13.75 20.6667H8.25C3.66667 20.6667 2.75 18.7783 2.75 15.0017V13.0858"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M19.25 15.1667L13.75 20.6667V17.9167C13.75 16.0833 14.6667 15.1667 16.5 15.1667H19.25Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <a href="#">سایر صفحات</a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="3"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
