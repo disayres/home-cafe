@@ -6,11 +6,19 @@
   src: url("./assets/fonts/iran-sans/IRANSansX-Regular.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Bonyad";
   font-weight: 400;
   src: url("./assets/fonts/bonyad/BonyadeKoodakFaNum-Regular.woff2")
     format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Morabba";
+  font-weight: 500;
+  src: url("./assets/fonts/morabba/Morabba-Medium.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -42,4 +50,13 @@
   /* fonts */
   --font-sans: "IRANSansX", sans-serif;
   --font-bonyad: "Bonyad";
+  --font-morabba: "Morabba";
+}
+
+@layer base {
+  .persian-number {
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+  }
 }
