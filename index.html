@@ -6,7 +6,7 @@
     <title>home-cafe</title>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body class="bg-secondary">
+  <body class="bg-background">
     <div id="app">
       <!-- header section -->
       <header id="header" class="text-white mt-4">
@@ -18,80 +18,99 @@
             <!-- desktop header right (logo and menu) -->
             <div class="flex gap-6 items-center">
               <div class="flex items-center justify-center">
-                <img
-                  class="w-32"
-                  src="src/assets/images/logo.png"
-                  alt="home cafe logo"
-                />
+                <a href="#">
+                  <img
+                    class="w-24"
+                    src="/src/assets/images/app-logo.png"
+                    alt="home cafe logo"
+                  />
+                </a>
               </div>
-              <ul
-                class="flex gap-4 *:flex *:gap-1 *:items-center *:py-3 *:px-4 *:cursor-pointer"
-              >
-                <li class="hover:text-secondary">
-                  <svg class="size-5.5">
-                    <use href="/svg/icons.svg#sort"></use>
-                  </svg>
-                  <a href="#"> دسته‌بندی محصولات</a>
-                  <svg class="size-4">
-                    <use href="/svg/icons.svg#chevron-down"></use>
-                  </svg>
+              <ul class="flex gap-4">
+                <li class="group hover:text-secondary transition-colors">
+                  <a href="#" class="flex gap-1 items-center py-3 px-4">
+                    <svg class="size-5.5">
+                      <use href="/svg/icons.svg#sort"></use>
+                    </svg>
+                    دسته‌بندی محصولات
+                    <svg
+                      class="size-4 transition-transform duration-200 group-hover:rotate-180"
+                    >
+                      <use href="/svg/icons.svg#chevron-down"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li>
-                  <svg class="size-5.5">
-                    <use href="/svg/icons.svg#about-icon"></use>
-                  </svg>
-                  <a href="#">درباره ما</a>
+                <li class="hover:text-secondary transition-colors">
+                  <a href="#" class="flex gap-1 items-center py-3 px-4">
+                    <svg class="size-5.5">
+                      <use href="/svg/icons.svg#about-icon"></use>
+                    </svg>
+                    درباره ما
+                  </a>
                 </li>
-                <li>
-                  <svg class="size-5.5">
-                    <use href="/svg/icons.svg#phone-icon"></use>
-                  </svg>
-                  <a href="#">تماس با ما </a>
+                <li class="hover:text-secondary transition-colors">
+                  <a href="#" class="flex gap-1 items-center py-3 px-4">
+                    <svg class="size-5.5">
+                      <use href="/svg/icons.svg#phone-icon"></use>
+                    </svg>
+                    تماس با ما
+                  </a>
                 </li>
-                <li>
-                  <svg class="size-5.5">
-                    <use href="/svg/icons.svg#pages-icon"></use>
-                  </svg>
-                  <a href="#">سایر صفحات</a>
-                  <svg class="size-4">
-                    <use href="/svg/icons.svg#chevron-down"></use>
-                  </svg>
+                <li class="group hover:text-secondary transition-colors">
+                  <a href="#" class="flex gap-1 items-center py-3 px-4">
+                    <svg class="size-5.5">
+                      <use href="/svg/icons.svg#pages-icon"></use>
+                    </svg>
+                    سایر صفحات
+                    <svg
+                      class="size-4 transition-transform duration-200 group-hover:rotate-180"
+                    >
+                      <use href="/svg/icons.svg#chevron-down"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>
             <!-- desktop header left (basket,profile) -->
             <div class="flex gap-x-4">
-              <div
-                class="w-31 h-11 persian-number bg-[#5886a2] flex items-center justify-between gap-x-2 rounded-4xl p-1 pl-2.5 font-bold cursor-pointer"
-              >
-                <div
-                  class="flex items-center justify-between w-20 h-full px-2 gap-x-1 bg-white text-primary rounded-4xl"
-                >
-                  <span>0</span>
-                  <svg class="size-4">
-                    <use href="/svg/icons.svg#toman-icon"></use>
+              <!-- basket -->
+              <div class="group relative persian-number font-bold">
+                <a href="#" class="header__btn">
+                  <span class="btn__comp">
+                    <span>0</span>
+                    <svg class="size-4">
+                      <use href="/svg/icons.svg#toman-icon"></use>
+                    </svg>
+                  </span>
+                  <svg class="size-5">
+                    <use href="/svg/icons.svg#basket-icon"></use>
                   </svg>
+                </a>
+
+                <!-- basket hover -->
+                <div
+                  class="p-3 w-55 shadow-xl rounded-3xl bg-white text-text text-xs font-bold font-morabba absolute top-15 end-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-[opacity,visibility] delay-150"
+                >
+                  <span>سبد خرید شما خالی است!</span>
                 </div>
-                <svg class="size-5">
-                  <use href="/svg/icons.svg#basket-icon"></use>
-                </svg>
               </div>
+
+              <!-- line -->
               <svg class="w-px h-11">
                 <use href="/svg/icons.svg#divider-icon"></use>
               </svg>
 
-              <div
-                class="w-31 h-11 bg-[#5886a2] flex items-center justify-between gap-x-2 rounded-4xl p-1 pl-2.5 font-morabba cursor-pointer"
-              >
-                <div
-                  class="flex w-20 items-center justify-between h-full px-2 bg-white text-primary rounded-4xl"
-                >
-                  <span class="text-nowrap text-xs">ورود | ثبت نام</span>
-                </div>
+              <!-- profile -->
+              <div class="font-morabba">
+                <a href="#" class="header__btn">
+                  <span class="btn__comp">
+                    <span class="text-nowrap text-xs">ورود | ثبت نام</span>
+                  </span>
 
-                <svg class="size-5">
-                  <use href="/svg/icons.svg#user-icon"></use>
-                </svg>
+                  <svg class="size-5">
+                    <use href="/svg/icons.svg#user-icon"></use>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>

@@ -31,6 +31,8 @@
   --color-secondary: #bc8767;
   --color-secondary-hover: #a76f51;
 
+  --color-brand-blue: #5886a2;
+
   /* Backgrounds */
   --color-background: #f7f3ed;
   --color-surface: #ffffff;
@@ -49,14 +51,24 @@
 
   /* fonts */
   --font-sans: "IRANSansX", sans-serif;
-  --font-bonyad: "Bonyad";
-  --font-morabba: "Morabba";
+  --font-bonyad: "Bonyad", sans-serif;
+  --font-morabba: "Morabba", sans-serif;
 }
 
 @layer base {
+}
+
+@layer components {
   .persian-number {
     -moz-font-feature-settings: "ss02";
-    -webkit-font-feature-settings: "ss02";
     font-feature-settings: "ss02";
+  }
+
+  .header__btn {
+    @apply w-31 h-11  bg-brand-blue flex items-center justify-between gap-x-2 rounded-4xl p-1 pl-2.5 cursor-pointer;
+  }
+
+  .btn__comp {
+    @apply flex items-center justify-between w-20 h-full px-2 gap-x-1 bg-white text-primary rounded-4xl;
   }
 }
